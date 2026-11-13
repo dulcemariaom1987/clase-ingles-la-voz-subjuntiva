@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Subjunctive Mood – Clase de inglés</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1b1b3a;--p:#4f46e5;--b:#2563eb;--k:#0891b2;--y:#fbbf24;--g:#16a34a;--o:#f97316;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font:19px/1.65 Poppins,"Segoe UI",Roboto,Arial,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#fff;z-index:30}
+[hidden]{display:none!important}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:#fff;border-bottom:3px solid var(--y);display:flex;gap:8px;align-items:center;padding:10px 14px;overflow-x:auto;white-space:nowrap}
+nav a{color:#fff;text-decoration:none;font-weight:600;padding:8px 14px;border-radius:99px;font-size:16px}
+nav select{margin-left:auto;font:600 16px Poppins,sans-serif;padding:8px;border-radius:12px;border:2px solid var(--p)}
+main{max-width:920px;margin:0 auto;padding:0 16px 60px}
+.hero{margin:22px 0;padding:34px 24px;border-radius:28px;color:#fff;background:linear-gradient(135deg,var(--p),var(--b) 55%,var(--k))}
+.hero h1{font-size:clamp(34px,7vw,60px);line-height:1.1;margin:0 0 10px;font-weight:800}
+.hero p{font-size:21px;margin:6px 0}
+.tags span{display:inline-block;background:#fff;color:var(--p);font-weight:600;border-radius:99px;padding:4px 14px;margin:6px 6px 0 0;font-size:16px}
+section{margin:46px 0}
+h2{font-size:clamp(28px,5vw,40px);margin:0 0 14px;font-weight:800;line-height:1.2}
+h3{font-size:24px;margin:22px 0 8px}
+.card{border:3px solid var(--c,var(--b));border-radius:22px;padding:20px 22px;margin:16px 0;background:#fff;box-shadow:0 7px 0 var(--c,var(--b))}
+.card h3{margin-top:0;color:var(--c,var(--b))}
+.box{background:#fff8d6;border:3px dashed var(--o);border-radius:16px;padding:12px 16px;margin:12px 0;font-weight:600}
+.en{cursor:pointer;color:#1d3fd1;font-weight:600;border-bottom:2px dotted var(--b)}
+.en::after{content:" 🔊";font-size:.7em}
+.en:hover{background:#eaf0ff}
+.ok{color:#0a8a4f}.no{color:#d92d20}
+table{border-collapse:collapse;width:100%;font-size:17px}
+td,th{border:2px solid #e3e3f0;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#eef0ff}
+.btn{font:600 18px Poppins,sans-serif;min-height:48px;padding:10px 22px;border:0;border-radius:14px;color:#fff;background:var(--b);cursor:pointer;margin:6px 8px 6px 0}
+.btn:hover{filter:brightness(1.1)}
+.btn.alt{background:var(--k)}.btn.ghost{background:var(--p)}.btn.good{background:var(--g)}.btn.bad{background:var(--o)}
+.btn:focus-visible,input:focus-visible,textarea:focus-visible,.en:focus-visible{outline:4px solid var(--y);outline-offset:2px}
+.q{border-left:8px solid var(--y);background:#fafaff;border-radius:14px;padding:12px 16px;margin:14px 0}
+.qt{margin:0 0 8px;font-size:20px}
+.opt{display:block;padding:8px 6px;border-radius:10px}
+.opt input{width:22px;height:22px;vertical-align:middle;margin-right:8px}
+.ans,textarea{width:100%;font:inherit;font-size:20px;padding:12px 14px;border:3px solid #cfd6ff;border-radius:14px;background:#fff;color:var(--ink)}
+.ans{max-width:420px;display:block;margin-bottom:6px}
+.fb{font-weight:600;margin-left:6px}
+.fb.ok{color:#0a8a4f}.fb.no{color:#d92d20}
+small.h{color:#666}
+.tr{background:#eefaf3;border:3px solid var(--g);border-radius:16px;padding:6px 18px;margin-top:10px}
+.rd{background:#fff;border:3px solid var(--p);border-radius:18px;padding:6px 20px;margin:12px 0}
+.player{margin:10px 0}
+.game{text-align:center;background:linear-gradient(135deg,#eaf0ff,#e3f6f8);border-radius:24px;padding:22px 16px}
+.big{font-size:clamp(22px,4.5vw,30px);margin:14px 0}
+#wp,#wa{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;min-height:62px;padding:10px;border-radius:16px}
+#wa{background:#fff;border:3px dashed var(--p);margin-bottom:10px}
+#wa:empty::before{content:"Toca las palabras para armar la oración…";color:#888;font-size:16px}
+.chip{font:600 20px Poppins,sans-serif;padding:10px 16px;border:0;border-radius:12px;background:var(--y);color:var(--ink);cursor:pointer}
+.chip:hover{background:var(--o);color:#fff}
+.wc{color:#666;font-size:16px}
+footer{text-align:center;font-size:24px;font-weight:800;color:var(--p);margin-top:40px}
+@media(max-width:560px){body{font-size:18px}.card{padding:16px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav>
+<a href="#teoria" style="background:var(--p)">📘 Teoría</a>
+<a href="#quiz" style="background:var(--k)">❓ Quiz</a>
+<a href="#juegos" style="background:var(--o)">🎮 Juegos</a>
+<a href="#listening" style="background:var(--b)">🎧 Listening</a>
+<a href="#reading" style="background:var(--g)">📖 Reading</a>
+<a href="#writing" style="background:var(--p)">✍️ Writing</a>
+<a href="#tarea" style="background:var(--k)">🏠 Tarea</a>
+<select id="rate" aria-label="Velocidad del audio"><option value="0.85">🐢 Audio lento</option><option value="1" selected>🎧 Audio normal</option></select>
+</nav>
+<main>
+<div class="hero">
+<h1>Subjunctive Mood 🎯<br>El modo subjuntivo</h1>
+<p>Aprende a dar consejos, expresar deseos e imaginar situaciones como un nativo.</p>
+<div class="tags"><span>Nivel intermedio</span><span>Teoría</span><span>Quiz</span><span>Juegos</span><span>Listening</span><span>Reading</span><span>Writing</span><span>Tarea</span></div>
+</div>
+<div class="box">👆 En esta clase, <span class="en">toca cualquier texto subrayado en inglés</span> para escuchar su pronunciación en inglés americano. Tómate todo el tiempo que necesites: no hay límite de duración.</div>
+<p id="nosynth" hidden class="no"><b>Aviso:</b> tu navegador no tiene voz para el audio. Prueba con Chrome, Edge o Safari actualizados.</p>
+
+<section id="teoria">
+<h2>📘 1. Teoría</h2>
+<div class="card" style="--c:var(--p)">
+<h3>¿Qué es el subjuntivo?</h3>
+<p>El <b>subjuntivo</b> se usa para hablar de cosas que <b>todavía no son hechos</b>: recomendaciones, órdenes indirectas, deseos e hipótesis. En español lo usas todo el tiempo («Quiero que <i>vengas</i>»). ¡La buena noticia! En inglés es más fácil: casi no cambia la forma del verbo.</p>
+</div>
+<div class="card" style="--c:var(--k)">
+<h3>A) Presente: pedir, sugerir, exigir</h3>
+<div class="box">sujeto + verbo de petición + <b>that</b> + sujeto + <b>verbo en forma base</b> (sin -s, sin -ed)</div>
+<p>Verbos típicos: <span class="en">suggest</span>, <span class="en">recommend</span>, <span class="en">insist</span>, <span class="en">demand</span>, <span class="en">require</span>, <span class="en">propose</span>, <span class="en">ask</span>, <span class="en">request</span>.</p>
+<p><span class="en">I suggest that he study more.</span> → Sugiero que él estudie más. (No se dice <i>studies</i>.)</p>
+<p><span class="en">The boss demands that we be on time.</span> → El jefe exige que lleguemos a tiempo. (Con <i>to be</i> siempre se usa <b>be</b>, nunca am/is/are.)</p>
+<p>Para el <b>negativo</b>, pon <b>not</b> antes del verbo, sin «do»: <span class="en">I recommend that she not go alone.</span></p>
+</div>
+<div class="card" style="--c:var(--b)">
+<h3>B) Expresiones de importancia</h3>
+<div class="box">It is + <b>adjetivo</b> + that + sujeto + <b>verbo en forma base</b></div>
+<p>Adjetivos: <span class="en">important</span>, <span class="en">essential</span>, <span class="en">vital</span>, <span class="en">necessary</span>, <span class="en">crucial</span>, <span class="en">imperative</span>.</p>
+<p><span class="en">It is essential that every student be on time.</span></p>
+<p><span class="en">It is important that she see a doctor.</span></p>
+</div>
+<div class="card" style="--c:var(--o)">
+<h3>C) Pasado: hipótesis y deseos irreales (were)</h3>
+<p>Para situaciones imaginarias o irreales usa <b>were</b> con <b>todas</b> las personas (I, he, she, it):</p>
+<p><span class="en">If I were you, I would apologize.</span> → Si yo fuera tú, me disculparía.</p>
+<p><span class="en">I wish I were taller.</span> → Ojalá fuera más alto.</p>
+<p><span class="en">She talks as if she were a queen.</span> → Habla como si fuera una reina.</p>
+<p>💡 En la conversación informal también se oye «was», pero en inglés formal y en los exámenes se prefiere <b>were</b>.</p>
+</div>
+<div class="card" style="--c:var(--g)">
+<h3>Errores comunes: ¡evítalos!</h3>
+<div style="overflow-x:auto"><table>
+<tr><th class="no">❌ Incorrecto</th><th class="ok">✅ Correcto</th></tr>
+<tr><td><span class="en">I suggest that he goes.</span></td><td><span class="en">I suggest that he go.</span></td></tr>
+<tr><td><span class="en">It is vital that she is here.</span></td><td><span class="en">It is vital that she be here.</span></td></tr>
+<tr><td><span class="en">If I was you, I would stay.</span></td><td><span class="en">If I were you, I would stay.</span></td></tr>
+<tr><td><span class="en">I recommend that he doesn’t go.</span></td><td><span class="en">I recommend that he not go.</span></td></tr>
+</table></div>
+</div>
+</section>
+
+<section id="quiz">
+<h2>❓ 2. Quiz</h2>
+<p>Elige la opción correcta y pulsa <b>Verificar</b>. Puedes intentarlo cuantas veces quieras.</p>
+<div class="ex" data-s="quiz"></div>
+</section>
+
+<section id="juegos">
+<h2>🎮 3. Juegos</h2>
+<h3>⚡ Reto relámpago: ¿correcta o incorrecta?</h3>
+<p>Lee la oración y decide si el subjuntivo está bien usado. ¡Acumula puntos y rachas!</p>
+<div class="game">
+<div>Puntos: <b id="gp">0</b> · Racha: <b id="gr">0</b> · Oración <b id="gn">1</b>/8</div>
+<p id="gq" class="big en"></p>
+<div id="gb"><button class="btn good" id="gy">✔ Correcta</button><button class="btn bad" id="gno">✘ Incorrecta</button></div>
+<p id="gf" class="big"></p>
+<button class="btn ghost" id="gre" hidden>🔁 Jugar otra vez</button>
+</div>
+<h3>🧩 Arma la oración</h3>
+<p>Toca las palabras en el orden correcto. Si te equivocas, toca una palabra para devolverla.</p>
+<div class="game">
+<div id="wa"></div>
+<div id="wp"></div>
+<button class="btn good" id="wv">Verificar</button><button class="btn alt" id="wc">Borrar</button><button class="btn ghost" id="wn">Siguiente ▶</button>
+<p id="wf" class="big"></p>
+</div>
+</section>
+
+<section id="listening">
+<h2>🎧 4. Listening</h2>
+<div class="card" style="--c:var(--b)">
+<h3>Mensaje de voz: una fiesta sorpresa</h3>
+<p>Vas a escuchar un mensaje de voz de Sarah a su hermano Daniel. <b>Escúchalo las veces que quieras</b> (puedes cambiar la velocidad arriba) y responde. Pulsa «Mostrar transcripción» solo cuando termines.</p>
+<div class="box">Vocabulario: <span class="en">mention</span> = mencionar · <span class="en">receipt</span> = recibo · <span class="en">sharp</span> = en punto · <span class="en">balloons</span> = globos · <span class="en">avoid</span> = evitar · <span class="en">tart</span> = tarta</div>
+<div class="player" data-k="L1"></div>
+<div class="ex" data-s="l1"></div>
+</div>
+</section>
+
+<section id="reading">
+<h2>📖 5. Reading</h2>
+<div class="card" style="--c:var(--g)">
+<h3>Consejos para vivir con compañeros de piso</h3>
+<p>Lee el artículo con calma (toca cada párrafo para escucharlo) y luego responde.</p>
+<div class="box">Vocabulario: <span class="en">roommate</span> = compañero de piso · <span class="en">awkward</span> = incómodo · <span class="en">bills</span> = facturas · <span class="en">conflict</span> = conflicto · <span class="en">reminder</span> = recordatorio</div>
+<div class="rd" data-k="R1"></div>
+<div class="player" data-k="R1" data-nt="1"></div>
+<div class="ex" data-s="r1"></div>
+</div>
+</section>
+
+<section id="writing">
+<h2>✍️ 6. Writing</h2>
+<div class="card" style="--c:var(--p)">
+<h3>Parte A: completa las oraciones</h3>
+<p>Escribe la palabra o palabras que faltan en el espacio (___). Entre paréntesis está el verbo que debes usar.</p>
+<div class="ex" data-s="w1"></div>
+</div>
+<div class="card" style="--c:var(--k)">
+<h3>Parte B: escritura libre</h3>
+<div class="fw" data-k="wf"></div>
+</div>
+</section>
+
+<section id="tarea">
+<h2>🏠 Tarea</h2>
+<div class="box">¡Todo lo que necesitas está aquí! No tienes que buscar nada por fuera. Es corta y sencilla: practica a tu ritmo.</div>
+<div class="card" style="--c:var(--b)">
+<h3>🎧 Tarea 1: Listening – El mensaje del entrenador</h3>
+<div class="player" data-k="HL"></div>
+<div class="ex" data-s="hl"></div>
+</div>
+<div class="card" style="--c:var(--g)">
+<h3>📖 Tarea 2: Reading – Una carta de la tía Rosa</h3>
+<div class="rd" data-k="HR"></div>
+<div class="player" data-k="HR" data-nt="1"></div>
+<div class="ex" data-s="hr"></div>
+</div>
+<div class="card" style="--c:var(--p)">
+<h3>✍️ Tarea 3: Writing</h3>
+<p>Completa con la forma correcta:</p>
+<div class="ex" data-s="hw"></div>
+<h3>Escritura libre</h3>
+<div class="fw" data-k="hf"></div>
+</div>
+</section>
+<footer>🎉 ¡Excelente trabajo! Keep practicing! 🎉</footer>
+</main>
+
+<script>
+const $=s=>document.querySelector(s);
+const E=s=>`<span class="en">${s}</span>`,H=s=>` <small class="h">(${s})</small>`;
+const mc=(q,o,a)=>({t:'mc',q,o,a}),fi=(q,a)=>({t:'fill',q,a});
+
+/* ---------- Textos de audio y lectura ---------- */
+const TX={
+L1:`Hi Daniel, it is Sarah. I am calling about Mom’s birthday party on Saturday. First of all, thank you for helping me. Mom must not find out, so it is essential that nobody mention the party to her. I already told Aunt Linda that she not say anything on the phone, because you know how she loves to talk!
+I also suggest that you pick up the cake before noon. The bakery requires that customers show the receipt, so please bring the email I forwarded. Dad insists that we start at six o’clock sharp, and he demands that everyone arrive fifteen minutes early. Honestly, it is important that you be there at five forty-five, not at six ten like last year!
+Now, about the decorations. Our cousin Tom wishes he were here to help, but he is traveling for work. If I were you, I would ask Rachel to bring the balloons. She acts as if she were a professional party planner, so she will probably love the job.
+One more thing: the doctor recommended that Mom avoid sugar, so I propose that we also buy a fruit tart. And please, it is vital that she not see the cake in the car! Call me back tonight, okay? I will be home after eight. Thanks again, and talk soon. Bye!`,
+R1:`Moving in with a friend sounds exciting, but experts say it can also be stressful. Dr. Karen Miles, a family counselor in Chicago, has helped hundreds of young adults share apartments. According to her, the secret is to talk before problems start. “I always recommend that new roommates write down their rules,” she explains. “It is essential that everyone agree on the basics: cleaning, noise, guests, and money.”
+Many people avoid these conversations because they feel awkward. Dr. Miles insists that this attitude is a mistake. She suggests that roommates meet once a month and share their feelings calmly. “It is important that each person speak honestly, and that nobody interrupt,” she says.
+Money is another common source of conflict. Dr. Miles proposes that the roommates open a shared account for bills, so nobody forgets to pay. She also demands that her clients be clear about who buys the groceries. “Surprises about money destroy friendships faster than anything,” she warns.
+Of course, nobody is perfect. Some roommates act as if they were living alone, leaving dirty dishes in the sink. Others wish they were more organized but never change. For these cases, Dr. Miles gives a simple tip: “If I were your roommate, I would want a polite reminder, not an angry note.” Her final advice? It is vital that you treat your roommate the way you want to be treated. Respect, communication, and a little humor can turn any apartment into a happy home.`,
+HL:`Welcome to the team, everyone. This is Coach Baker. I require that every player arrive at seven sharp. It is important that you be rested, so I recommend that you sleep at least eight hours. I also suggest that you eat a light breakfast. If I were you, I would drink plenty of water. Some of you act as if you were already professionals, and that is great, but I insist that everybody listen to the team captain. I wish the field were bigger, but we will make it work. Finally, it is essential that nobody be late for the bus on Friday. See you tomorrow!`,
+HR:`Dear Maya,
+Thank you for your letter. I understand that you are nervous about your new job in Boston, so here is my advice. First, I suggest that you arrive early on your first day. It is important that your boss see you as a responsible person. Second, I recommend that you ask questions; nobody expects you to know everything. If I were you, I would also introduce myself to every coworker.
+Third, my doctor insists that I rest more, and I think it is a good idea for you too: it is vital that you not work every weekend. I wish I were there to celebrate with you! Please call me on Sunday.
+With love, Aunt Rosa`
+};
+
+/* ---------- Ejercicios ---------- */
+const SETS={
+quiz:[
+mc(E("She insists that he ___ the report today."),["finishes","finish","finished"],1),
+mc(E("If I ___ you, I would apologize."),["am","was","were"],2),
+mc(E("It is essential that every student ___ on time."),["is","be","are"],1),
+mc(E("I wish she ___ here with us now."),["is","were","be"],1),
+mc(E("The doctor recommended that she ___ more water."),["drinks","drank","drink"],2),
+mc(E("He talks as if he ___ the boss."),["is","were","be"],1),
+mc("Elige la oración correcta:",["I demand that he apologizes.","I demand that he apologize.","I demand that he apologizing."],1),
+mc(E("The teacher requires that students not ___ their phones in class."),["use","uses","used"],0)],
+l1:[
+mc("¿Para qué llama Sarah a Daniel?",["To invite him to dinner","To plan a surprise party for their mom","To cancel a birthday party"],1),
+mc("¿Qué es esencial según Sarah?",["That nobody mention the party to Mom","That everyone bring a gift","That Mom choose the cake"],0),
+mc("¿Qué exige la panadería?",["Payment in cash","That customers show the receipt","That customers arrive early"],1),
+mc("¿A qué hora debe llegar Daniel?",["5:45","6:00","6:10"],0),
+mc("¿Quién desea estar allí para ayudar?",["Aunt Linda","Rachel","Cousin Tom"],2),
+mc("¿Por qué compran también una tarta de frutas?",["Mom loves fruit","The doctor recommended that Mom avoid sugar","The bakery has no cake"],1),
+fi("Completa con lo que escuchaste: "+E("It is important that you ___ there at 5:45.")+H("to be"),["be"]),
+fi("Completa con lo que escuchaste: "+E("I told Aunt Linda that she ___ say anything on the phone.")+H("negativo"),["not"])],
+r1:[
+mc("¿Cuál es la idea principal del texto?",["Tips for sharing a home successfully","How to find a cheap apartment","Why friends should never live together"],0),
+mc("¿Qué recomienda la Dra. Miles a los nuevos compañeros?",["Write down their rules","Pay rent early","Avoid talking about money"],0),
+mc("¿Con qué frecuencia sugiere reunirse?",["Every week","Once a month","Once a year"],1),
+mc("¿Para qué sirve la cuenta compartida?",["So nobody forgets to pay the bills","So everyone saves money","So the landlord is happy"],0),
+mc("¿Qué tipo de mensaje preferiría ella como compañera?",["An angry note","A polite reminder","No message at all"],1),
+fi("Completa según el texto: "+E("She suggests that roommates ___ once a month.")+H("to meet"),["meet"]),
+fi("Completa según el texto: "+E("It is important that each person ___ honestly.")+H("to speak"),["speak"]),
+fi("Completa según el texto: "+E("It is vital that you ___ your roommate the way you want to be treated.")+H("to treat"),["treat"])],
+w1:[
+fi(E("It is essential that she ___ on time.")+H("to be"),["be"]),
+fi(E("The boss demands that we ___ the project today.")+H("to finish"),["finish"]),
+fi(E("If I ___ you, I would study more.")+H("to be"),["were"]),
+fi(E("I suggest that he ___ his passport at home.")+H("not / to forget"),["not forget"]),
+fi(E("She talks as if she ___ an expert.")+H("to be"),["were"]),
+fi("Reescribe «You should see a doctor» con subjuntivo: "+E("I recommend that you ___ a doctor.")+H("to see"),["see"])],
+hl:[
+mc("¿A qué hora deben llegar los jugadores?",["At seven sharp","At eight","At six thirty"],0),
+mc("¿Qué recomienda el entrenador?",["Sleeping at least eight hours","Running before breakfast","Skipping dinner"],0),
+mc("¿Qué desea el entrenador?",["That the field were bigger","That the bus were faster","That the game were shorter"],0),
+fi("Completa con lo que escuchaste: "+E("It is essential that nobody ___ late for the bus.")+H("to be"),["be"])],
+hr:[
+mc("¿Por qué está nerviosa Maya?",["She has a new job in Boston","She is moving to Chicago","She lost her keys"],0),
+mc("¿Qué sugiere Rosa para el primer día?",["Arrive early","Wear a uniform","Bring a gift"],0),
+mc("¿Qué dice Rosa sobre los fines de semana?",["Maya should not work every weekend","Maya should work every weekend","Maya should visit Rosa"],0),
+fi("Completa según la carta: "+E("I recommend that you ___ questions.")+H("to ask"),["ask"])],
+hw:[
+fi(E("It is vital that the room ___ clean.")+H("to be"),["be"]),
+fi(E("I suggest that she ___ her mother tonight.")+H("to call"),["call"]),
+fi(E("If he ___ taller, he would play basketball.")+H("to be"),["were"]),
+fi(E("The teacher demands that students ___ until the last minute.")+H("not / to wait"),["not wait"])]
+};
+
+const FW={
+wf:{p:`Un amigo viaja por primera vez a Estados Unidos y te pide consejos. Escribe un párrafo de al menos 5 oraciones usando: <b>I recommend that…</b>, <b>It is important that…</b>, <b>If I were you…</b>, <b>I suggest that…</b> y <b>I wish…</b>`,min:30,
+keys:[[/recommend that/,"I recommend that"],[/(important|essential|vital|necessary|crucial) that/,"It is important that"],[/if i were/,"If I were you"],[/suggest that/,"I suggest that"],[/\bi wish\b/,"I wish"]]},
+hf:{p:`Escribe al menos 3 oraciones dando consejos a una compañera de trabajo nueva. Usa: <b>I recommend that…</b>, <b>If I were you…</b> y <b>I wish…</b>`,min:15,
+keys:[[/recommend that/,"I recommend that"],[/if i were/,"If I were you"],[/\bi wish\b/,"I wish"]]}
+};
+
+/* ---------- Audio (inglés americano) ---------- */
+const synth=window.speechSynthesis;let rate=1,tk=0;
+if(!synth||!window.SpeechSynthesisUtterance)$('#nosynth').hidden=false;
+function pickVoice(){const v=synth.getVoices();return v.find(x=>x.lang==='en-US'&&/Google|Samantha|Aria|Jenny|Natural/i.test(x.name))||v.find(x=>x.lang==='en-US'||x.lang==='en_US')||v.find(x=>/^en/i.test(x.lang))}
+function stop(){tk++;if(synth)synth.cancel()}
+function say(t){
+ if(!synth)return;stop();const my=tk;
+ const parts=t.match(/[^.!?;:]+[.!?;:]*["”]?/g)||[t];let i=0;
+ (function next(){
+  if(my!==tk||i>=parts.length)return;
+  const s=parts[i++].trim();if(!s)return next();
+  const u=new SpeechSynthesisUtterance(s);u.lang='en-US';u.rate=rate;
+  const v=pickVoice();if(v)u.voice=v;
+  u.onend=next;u.onerror=next;synth.speak(u);
+ })();
+}
+$('#rate').onchange=function(){rate=+this.value};
+document.addEventListener('click',e=>{
+ const s=e.target.closest('.en');
+ if(s)say(s.textContent.replace(/_+/g,' blank '));
+});
+
+/* ---------- Reproductores y lecturas ---------- */
+document.querySelectorAll('.rd').forEach(d=>{
+ d.innerHTML=TX[d.dataset.k].split('\n').map(x=>`<p class="en">${x}</p>`).join('');
+});
+document.querySelectorAll('.player').forEach(p=>{
+ const t=TX[p.dataset.k];
+ p.innerHTML=`<button type="button" class="btn" data-a="p">▶ Escuchar</button><button type="button" class="btn alt" data-a="s">■ Detener</button>`+
+ (p.dataset.nt?'':`<button type="button" class="btn ghost" data-a="t">📄 Mostrar transcripción</button><div class="tr" hidden>${t.split('\n').map(x=>`<p class="en">${x}</p>`).join('')}</div>`);
+ p.addEventListener('click',e=>{
+  const b=e.target.closest('button');if(!b)return;const a=b.dataset.a;
+  if(a==='p')say(t.replace(/\n/g,' '));
+  else if(a==='s')stop();
+  else if(a==='t'){const d=p.querySelector('.tr');d.hidden=!d.hidden;b.textContent=d.hidden?'📄 Mostrar transcripción':'🙈 Ocultar transcripción'}
+ });
+});
+
+/* ---------- Ejercicios: construcción y verificación ---------- */
+const norm=s=>s.toLowerCase().replace(/[’‘]/g,"'").replace(/[.!?,]/g,'').replace(/\s+/g,' ').trim();
+function chk(d,it){
+ const f=d.querySelector('.fb');let ok;
+ if(it.t==='mc'){
+  const s=d.querySelector('input:checked');
+  if(!s){f.className='fb no';f.textContent='Elige una opción primero.';return}
+  ok=+s.value===it.a;
+ }else{
+  const v=norm(d.querySelector('.ans').value);
+  if(!v){f.className='fb no';f.textContent='Escribe tu respuesta primero.';return}
+  ok=it.a.some(x=>norm(x)===v);
+ }
+ f.className='fb '+(ok?'ok':'no');
+ f.textContent=ok?'✅ ¡Correcto!':'❌ Todavía no. ¡Inténtalo otra vez!';
+}
+document.querySelectorAll('.ex').forEach(box=>{
+ const k=box.dataset.s;
+ SETS[k].forEach((it,n)=>{
+  const d=document.createElement('div');d.className='q';
+  let h=`<p class="qt"><b>${n+1}.</b> ${it.q}</p>`;
+  if(it.t==='mc')h+=it.o.map((o,j)=>`<label class="opt"><input type="radio" name="${k}${n}" value="${j}"> <span class="en">${o}</span></label>`).join('');
+  else h+=`<input class="ans" type="text" placeholder="Escribe aquí…" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Respuesta ${n+1}">`;
+  h+=`<button type="button" class="btn">Verificar</button><span class="fb"></span>`;
+  d.innerHTML=h;
+  d.querySelector('.btn').onclick=()=>chk(d,it);
+  const inp=d.querySelector('.ans');if(inp)inp.addEventListener('keydown',e=>{if(e.key==='Enter')chk(d,it)});
+  box.append(d);
+ });
+});
+
+/* ---------- Escritura libre ---------- */
+document.querySelectorAll('.fw').forEach(w=>{
+ const c=FW[w.dataset.k];
+ w.innerHTML=`<p>${c.p}</p><textarea rows="7" placeholder="Write here… / Escribe aquí…" spellcheck="false" aria-label="Escritura libre"></textarea><div class="wc"><span class="cnt">0 palabras</span> · mínimo ${c.min}</div><button type="button" class="btn good">Verificar mi texto</button><p class="fb"></p>`;
+ const ta=w.querySelector('textarea'),f=w.querySelector('.fb');
+ const words=()=>(ta.value.trim().match(/\S+/g)||[]).length;
+ ta.addEventListener('input',()=>{w.querySelector('.cnt').textContent=words()+' palabras'});
+ w.querySelector('.btn').onclick=()=>{
+  const t=norm(ta.value);
+  if(!t){f.className='fb no';f.textContent='Escribe tu texto primero.';return}
+  const miss=c.keys.filter(k=>!k[0].test(t)).map(k=>k[1]);
+  const bad=/(suggest|recommend|insist|demand|require|propose|important|essential|vital|necessary|crucial) that (he|she|it) (is|was|has|does|goes|[a-z]+s)\b/.test(t);
+  let m=[];
+  if(miss.length)m.push('Te falta usar: '+miss.join(', ')+'.');
+  if(words()<c.min)m.push('Escribe un poco más (mínimo '+c.min+' palabras).');
+  if(bad)m.push('⚠️ Revisa los verbos después de «that»: deben ir en forma base (sin -s).');
+  if(m.length){f.className='fb no';f.textContent='❌ '+m.join(' ')}
+  else{f.className='fb ok';f.textContent='✅ ¡Muy bien! Usaste todas las estructuras. Relee tu texto para revisar ortografía.'}
+ };
+});
+
+/* ---------- Juego 1: Reto relámpago ---------- */
+const GQ=[["I suggest that she go early.",1],["I demand that he pays now.",0],["If I were rich, I would travel.",1],["It is vital that he be informed.",1],["He insisted that she is present.",0],["She acts as if she were a queen.",1],["We recommend that you takes a break.",0],["The manager proposed that the meeting be moved.",1]];
+let gl,gi,gp,gs,glock;
+function gshow(){$('#gq').textContent=gl[gi][0];$('#gn').textContent=gi+1;$('#gp').textContent=gp;$('#gr').textContent=gs;$('#gf').textContent='';glock=false}
+function gstart(){gl=[...GQ].sort(()=>Math.random()-.5);gi=0;gp=0;gs=0;$('#gre').hidden=true;$('#gb').hidden=false;gshow()}
+function gans(v){
+ if(glock)return;glock=true;
+ if(v===gl[gi][1]){gp+=10+gs*2;gs++;$('#gf').textContent='🎉 ¡Punto!'}
+ else{gs=0;$('#gf').textContent='😅 Ups, esa no.'}
+ $('#gp').textContent=gp;$('#gr').textContent=gs;gi++;
+ setTimeout(()=>{
+  if(gi>=gl.length){$('#gb').hidden=true;$('#gq').textContent='🏆 Puntaje final: '+gp;$('#gf').textContent=gp>=70?'¡Eres un experto del subjuntivo!':'¡Buen intento! Repasa la teoría y juega otra vez.';$('#gre').hidden=false}
+  else gshow();
+ },1000);
+}
+$('#gy').onclick=()=>gans(1);$('#gno').onclick=()=>gans(0);$('#gre').onclick=gstart;gstart();
+
+/* ---------- Juego 2: Arma la oración ---------- */
+const WO=["I suggest that he study harder.","It is vital that she be here.","If I were you, I would go.","They demand that we not leave."];
+let wi=0,pool=[],ans=[];
+function chip(c,f){const b=document.createElement('button');b.type='button';b.className='chip';b.textContent=c.x;b.onclick=f;return b}
+function wr(){
+ $('#wp').innerHTML='';$('#wa').innerHTML='';
+ pool.forEach(c=>$('#wp').append(chip(c,()=>{pool=pool.filter(z=>z!==c);ans.push(c);wr()})));
+ ans.forEach(c=>$('#wa').append(chip(c,()=>{ans=ans.filter(z=>z!==c);pool.push(c);wr()})));
+ $('#wf').textContent='';
+}
+function wload(){pool=WO[wi].split(' ').map((x,i)=>({x,i})).sort(()=>Math.random()-.5);ans=[];wr()}
+$('#wv').onclick=()=>{
+ const f=$('#wf');
+ if(!ans.length){f.textContent='Toca algunas palabras primero.';return}
+ if(ans.map(c=>c.x).join(' ')===WO[wi]){f.textContent='✅ ¡Perfecto!';say(WO[wi])}
+ else f.textContent='❌ Todavía no. ¡Sigue intentando!';
+};
+$('#wc').onclick=wload;
+$('#wn').onclick=()=>{wi=(wi+1)%WO.length;wload()};
+wload();
+</script>
+</body>
+</html>
